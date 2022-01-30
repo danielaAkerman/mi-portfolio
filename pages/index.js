@@ -1,3 +1,34 @@
+// OBTENER BIENVENIDA DESDE CMS
+function getBienvenida() {
+  return fetch(
+    "https://cdn.contentful.com/spaces/mk4vl3fftmmq/environments/master/entries?access_token=4w2igBAOrE0biXFvBGag39cG4YjR9u1fQvJGbE79dOA&&content_type=welcome"
+  )
+    .then((res) => {
+      return res.json();
+    })
+    .then((dataBienvenida) => {
+      const bienvenidaCollections = dataBienvenida.items.map((i) => {
+        return {
+          hola: i.fields.saludo,
+          soyDaniela: i.fields.soyDaniela,
+        };
+      });
+
+      return bienvenidaCollections;
+    });
+}
+
+function addBienvenida(params) {
+  saludo = document.querySelector(".welcome__hola");
+  soy = document.querySelector(".welcome__soy-daniela");
+
+  saludo.textContent = params.hola;
+
+  soy.textContent = params.soyDaniela;
+}
+
+// FIN OBTENER BIENVENIDA DESDE CMS
+
 // OBTENER PRESENTACION DESDE CMS
 function getPresentacion() {
   return fetch(
@@ -30,8 +61,6 @@ function addPresentacion(params) {
   descripcion.textContent = params.descripcionPresentacion;
 
   imagen.src = params.imagenPresentacion;
-
-
 }
 
 // FIN OBTENER PRESENTACION DESDE CMS
@@ -87,6 +116,11 @@ function addServicios(params) {
 // FIN OBTENER SERVICIOS DESDE CMS
 
 function main() {
+  getBienvenida().then(function (bienvenida) {
+    for (const b of bienvenida) {
+      addBienvenida(b);
+    }
+  });
 
   getPresentacion().then(function (presentacion) {
     for (const p of presentacion) {

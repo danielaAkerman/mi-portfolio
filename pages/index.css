@@ -43,8 +43,9 @@ body {
   background-color: #d6814a;
 }
 .menu-navegacion {
-  display: none;
+display: none;
 }
+
 @media (min-width: 690px) {
   .menu-navegacion {
     display: flex;

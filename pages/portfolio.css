@@ -24,6 +24,8 @@ body {
 
 .seccion-portfolio {
   color: #7d5532;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 .portfolio__title {
   text-align: center;
@@ -55,8 +57,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.servicio {
-}
+
 .portfolio__container__imagen-portfolio {
   width: 100%;
   display: flex;
