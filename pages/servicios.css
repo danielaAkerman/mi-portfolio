@@ -24,6 +24,8 @@ body {
 
 .seccion-servicios {
   color: #7d5532;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 .servicios__title {
   text-align: center;
