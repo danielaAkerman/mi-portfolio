@@ -1,0 +1,71 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  background-color: #ffebb5;
+}
+
+.seccion-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 75px;
+  border: solid 2px saddlebrown;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.seccion-servicios {
+  color: #7d5532;
+}
+.servicios__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.servicios__container {
+  margin-top: 20px;
+  padding: 40px;
+  display: grid;
+  gap: 30px;
+}
+@media (min-width: 796px) {
+  .servicios__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1099px) {
+  .servicios__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.servicios__container__uno {
+  padding: 20px;
+  box-shadow: 0 0 15px lightcoral;
+  border-radius: 4px;
+}
+.servicio {
+}
+.servicios__container__imagen-servicio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.imagen-servicio {
+  width: auto;
+  height: 250px;
+  margin: 0 auto;
+  border: solid 3px #063831;
+}
+.titulo-servicio {
+  font-size: 24px;
+}
+.descripcion-servicio {
+}
