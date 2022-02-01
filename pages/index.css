@@ -27,7 +27,7 @@ body {
 
 .seccion-presentacion {
   background-color: #063831;
-  color: #c5ce99;
+  color: #E9F5DB;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -74,7 +74,7 @@ body {
 }
 
 .seccion-servicios {
-  background-color: #8ab17d;
+  background-color: #E9F5DB;
   color: #063831;
   padding-top: 75px;
   padding-bottom: 30px;

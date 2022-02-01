@@ -34,6 +34,7 @@ footer{
 }
 
 .footer__logo__derechos-reservados {
+  color: #E9F5DB;
 }
 
 .footer__rrss {
@@ -58,15 +59,15 @@ footer{
 
 .footer__rrss__red-social__logo-linkedin,
 .footer__rrss__red-social__logo-github {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   display: inline;
   margin: auto 0;
 }
 
 .footer__rrss__red-social__linkedin,
 .footer__rrss__red-social__github {
-  color: black;
+  color: #E9F5DB;
   display: inline;
   margin: auto 8px;
 }
