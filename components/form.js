@@ -8,15 +8,15 @@ function contactComponent(element) {
         <form action="" class="form">
           <div class="contacto__fieldset">
             <label for="nombre" class="label">Nombre</label>
-            <input id="nombre" class="input-nombre" type="text" />
+            <input id="nombre" name="nombre" class="input-nombre" type="text" />
           </div>
           <div class="contacto__fieldset">
             <label for="email" class="label">Email</label>
-            <input id="email" class="input-email" type="email" />
+            <input id="email" name="email" class="input-email" type="email" />
           </div>
           <div class="contacto__fieldset">
             <label for="mensaje" class="label">Mensaje</label>
-            <textarea id="mensaje" class="input-mensaje"></textarea>
+            <textarea id="mensaje" name="mensaje" class="input-mensaje"></textarea>
           </div>
           <button class="boton">Enviar</button>
         </form>
@@ -36,10 +36,10 @@ function postData() {
     const value = Object.fromEntries(data.entries());
 
     const mensaje = `
-    Enviado por: ${value.name};
-    Email: ${value.email}
+    Enviado por: ${value.nombre}; <br><br>
+    Email: ${value.email}<br><br>
     mensaje:
-    ${value.message};
+    ${value.mensaje};
     `;
 
     fetch("https://apx-api.vercel.app/api/utils/dwf", {
