@@ -11,8 +11,14 @@
       rel="stylesheet"
     />
 
+    <!-- IMPORTAMOS COMPONENTES -->
+    <link rel="stylesheet" href="./components/header.css" />
+    <script async src="./components/header.js"></script>
+
     <link rel="stylesheet" href="./components/footer.css" />
     <script async src="./components/footer.js"></script>
+
+    <!-- IMPORTAMOS JS Y CSS -->
 
     <link rel="stylesheet" href="./pages/portfolio.css" />
     <script async src="./pages/portfolio.js"></script>
@@ -23,32 +29,27 @@
   <body>
     <header class="seccion-header"></header>
 
-
     <section class="seccion-portfolio">
-        <h2 class="portfolio__title">Mi Portfolio</h2>
-        <div class="portfolio__container"></div>
-      </section>
+      <h2 class="portfolio__title">Mi Portfolio</h2>
+      <div class="portfolio__container"></div>
+    </section>
 
-<!-- COMIENZA TEMPLATE PORTFOLIO -->
-<template id="portfolio-card-template">
-    <article class="portfolio__container__uno">
-      <div class="portfolio__container__imagen-portfolio">
-        <img class="imagen-portfolio" src="" alt="" />
-      </div>
-
-      <h3 class="portfolio__container__titulo-portfolio"></h3>
-      <p class="portfolio__container__descripcion-portfolio">
-
-      </p>
-      <a href="" class="portfolio__container__link">
-        <button class="portfolio__container__link-button">Visitar</button>
-      </a>
-    </article>
-  </template>
-  <!-- TERMINA TEMPLATE PORTFOLIO -->
-
-
-
+    <!-- COMIENZA TEMPLATE PORTFOLIO -->
+    <template id="portfolio-card-template">
+      <article class="portfolio__container__uno">
+        <div class="portfolio__container__imagen-portfolio">
+          <img class="imagen-portfolio" src="" alt="" />
+        </div>
+        <div class="portfolio__card-container-text">
+          <h3 class="portfolio__container__titulo-portfolio"></h3>
+          <p class="portfolio__container__descripcion-portfolio"></p>
+          <a href="" class="portfolio__container__link">
+            <button class="portfolio__container__link-button">Visitar</button>
+          </a>
+        </div>
+      </article>
+    </template>
+    <!-- TERMINA TEMPLATE PORTFOLIO -->
 
     <section class="seccion-footer"></section>
   </body>

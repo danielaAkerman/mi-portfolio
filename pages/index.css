@@ -6,67 +6,8 @@
 
 body {
   margin: 0;
-  background-color: #ffebb5;
 }
 
-.seccion-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 75px;
-  border: solid 2px saddlebrown;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-}
-
-.header__logo {
-}
-
-.header__logo__img {
-  height: 50px;
-  width: 50px;
-  background-color: #d6814a;
-}
-.header__burger-menu {
-}
-@media (min-width: 690px) {
-  .header__burger-menu {
-    display: none;
-  }
-}
-.header__burger-menu__img {
-  height: 50px;
-  width: 50px;
-  background-color: #d6814a;
-}
-.menu-navegacion {
-display: none;
-}
-
-@media (min-width: 690px) {
-  .menu-navegacion {
-    display: flex;
-    gap: 10px;
-  }
-}
-.header__portfolio {
-  font-size: 24px;
-  text-decoration: none;
-  color: saddlebrown;
-}
-.header__servicios {
-  font-size: 24px;
-  text-decoration: none;
-  color: saddlebrown;
-}
-.header__contacto {
-  font-size: 24px;
-  text-decoration: none;
-  color: saddlebrown;
-}
 .seccion-welcome {
   height: calc(100vh - 75px);
   display: flex;
@@ -76,17 +17,17 @@ display: none;
 }
 .welcome__hola {
   font-size: 48px;
-  color: #d6814a;
+  color: #063831;
   margin-top: 0;
 }
 .welcome__soy-daniela {
   font-size: 32px;
-  color: #d6814a;
+  color: #063831;
 }
 
 .seccion-presentacion {
   background-color: #063831;
-  color: #ffebb5;
+  color: #c5ce99;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -127,23 +68,30 @@ display: none;
   justify-content: center;
 }
 .presentacion__img {
-  height: 499px;
+  height: 400px;
 
   width: auto;
 }
 
 .seccion-servicios {
-  color: #7d5532;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  background-color: #8ab17d;
+  color: #063831;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+@media (min-width: 796px) {
+  .seccion-servicios {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .servicios__title {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  margin-top: 0px;
 }
 .servicios__container {
-  margin-top: 20px;
   padding: 40px;
   display: grid;
   gap: 30px;
@@ -160,7 +108,7 @@ display: none;
 }
 .servicios__container__uno {
   padding: 20px;
-  box-shadow: 0 0 15px lightcoral;
+
   border-radius: 4px;
 }
 .servicio {
@@ -171,102 +119,15 @@ display: none;
   justify-content: center;
 }
 .imagen-servicio {
-  width: auto;
+  width: 250px;
   height: 250px;
   margin: 0 auto;
-  border: solid 3px #063831;
 }
 .titulo-servicio {
   font-size: 24px;
+  text-align: center;
 }
 .descripcion-servicio {
-}
-
-.seccion-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  height: 667px;
-  background-color: #d6814a;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
   font-size: 18px;
-  color: white;
-}
-
-.contacto__title {
   text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-}
-@media (min-width: 900px) {
-  .contacto__title {
-    display: inline;
-    margin: 0;
-  }
-}
-
-.contacto__contenedor-form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-
-  width: 100%;
-}
-@media (min-width: 900px) {
-  .contacto__contenedor-form {
-    flex-direction: row;
-    justify-content: center;
-    gap: 71px;
-  }
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-bottom: 30px;
-}
-@media (min-width: 900px) {
-  .form {
-    width: 50%;
-  }
-}
-
-.label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.input-nombre,
-.input-email {
-  width: calc(100% - 8px);
-  height: 45px;
-  border: none;
-  border-radius: 4px;
-}
-
-.input-mensaje {
-  width: calc(100% - 8px);
-  height: 90px;
-  border: none;
-  border-radius: 4px;
-}
-
-.boton {
-  height: 50px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 40px;
-  background-color: #ffebb5;
-  color: #d6814a;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-.boton:hover {
-  background-color: #fdcd95;
-}
-.boton:active {
-  box-shadow: 0 0 24px #ffebb5;
 }

@@ -6,34 +6,29 @@
 
 body {
   margin: 0;
-  background-color: #ffebb5;
+
 }
 
-.seccion-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 75px;
-  border: solid 2px saddlebrown;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-}
 
 .seccion-portfolio {
-  color: #7d5532;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  background-color: #8ab17d;
+  color: #063831;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+@media (min-width: 796px) {
+  .seccion-portfolio {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .portfolio__title {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  margin-top: 0px;
 }
 .portfolio__container {
-  margin-top: 20px;
   padding: 40px;
   display: grid;
   gap: 30px;
@@ -50,12 +45,7 @@ body {
 }
 .portfolio__container__uno {
   padding: 20px;
-  box-shadow: 0 0 15px lightcoral;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+
 }
 
 .portfolio__container__imagen-portfolio {
@@ -64,31 +54,44 @@ body {
   justify-content: center;
 }
 .imagen-portfolio {
-  width: auto;
+  width: 250px;
   height: 250px;
   margin: 0 auto;
-  border: solid 3px #063831;
 }
+.portfolio__card-container-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 312px;
+}
+
 .portfolio__container__titulo-portfolio {
   font-size: 24px;
   text-align: center;
 }
 .portfolio__container__descripcion-portfolio {
+  font-size: 18px;
+  text-align: center;
 }
 .portfolio__container__link {
   margin-bottom: 0;
   width: 100%;
+  max-width: 380px;
 }
+
 .portfolio__container__link-button {
   height: 50px;
   font-family: "Poppins", sans-serif;
-
   background-color: #d6814a;
   color: #ffebb5;
   border: none;
   border-radius: 4px;
   font-weight: bold;
   width: 100%;
+  max-width: 380px;
+  margin-bottom: 0;
+  text-align: center;
 }
 .portfolio__container__link-button:hover {
   color: #d6814a;

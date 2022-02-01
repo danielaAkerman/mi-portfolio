@@ -58,6 +58,10 @@ function main() {
         addPortfolio(p);
       }
     });
+
+    const header = document.querySelector(".seccion-header");
+    headerComponent(header);
+
     const footer = document.querySelector(".seccion-footer");
     footerComponent(footer);
   }

@@ -10,9 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- IMPORTAMOS COMPONENTES -->
+    <link rel="stylesheet" href="./components/header.css" />
+    <script async src="./components/header.js"></script>
+
+    <link rel="stylesheet" href="./components/form.css" />
+    <script async src="./components/form.js"></script>
+
     <link rel="stylesheet" href="./components/footer.css" />
     <script async src="./components/footer.js"></script>
 
+    <!-- IMPORTAMOS JS Y CSS -->
     <link rel="stylesheet" href="./pages/index.css" />
     <script async src="./pages/index.js"></script>
 
@@ -20,20 +29,7 @@
     <title>Daniela Akerman</title>
   </head>
   <body>
-    <header class="seccion-header">
-      <div class="header__logo">
-        <img src="./img/favicon.png" alt="" class="header__logo__img" />
-      </div>
-      <div class="header__burger-menu">
-        <img src="./img/menu.png" alt="" class="header__burger-menu__img" />
-      </div>
-
-      <nav class="menu-navegacion">
-        <a href="./portfolio.html" class="header__portfolio">Portfolio</a>
-        <a href="./servicios.html" class="header__servicios">Servicios</a>
-        <a href="./contacto.html" class="header__contacto">Contacto</a>
-      </nav>
-    </header>
+    <header class="seccion-header"></header>
 
     <section class="seccion-welcome">
       <h1 class="welcome__hola"></h1>
@@ -43,9 +39,7 @@
     <section class="seccion-presentacion">
       <div class="presentacion__texto">
         <h2 class="presentacion__texto__soy-daniela"></h2>
-        <p class="presentacion__texto__sobre-mi">
-
-        </p>
+        <p class="presentacion__texto__sobre-mi"></p>
       </div>
       <div class="presentacion__img-container">
         <img class="presentacion__img" src="" alt="ok" />
@@ -73,27 +67,7 @@
     </template>
     <!-- TERMINA TEMPLATE SERVICIOS -->
 
-    <section class="seccion-contacto">
-      <div class="contacto__contenedor-form">
-        <h2 class="contacto__title">Escribime</h2>
-
-        <form action="" class="form">
-          <div class="contacto__fieldset">
-            <label for="nombre" class="label">Nombre</label>
-            <input id="nombre" class="input-nombre" type="text" />
-          </div>
-          <div class="contacto__fieldset">
-            <label for="email" class="label">Email</label>
-            <input id="email" class="input-email" type="email" />
-          </div>
-          <div class="contacto__fieldset">
-            <label for="message" class="label">Mensaje</label>
-            <textarea id="message" class="input-mensaje"></textarea>
-          </div>
-          <button class="boton">Enviar</button>
-        </form>
-      </div>
-    </section>
+    <section class="seccion-contacto"></section>
     <section class="seccion-footer"></section>
   </body>
 </html>

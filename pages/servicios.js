@@ -53,6 +53,10 @@ function main() {
         addServicios(s);
       }
     });
+
+    const header = document.querySelector(".seccion-header");
+    headerComponent(header);
+    
     const footer = document.querySelector(".seccion-footer");
     footerComponent(footer);
   }

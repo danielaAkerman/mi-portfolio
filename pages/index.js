@@ -116,6 +116,9 @@ function addServicios(params) {
 // FIN OBTENER SERVICIOS DESDE CMS
 
 function main() {
+  const header = document.querySelector(".seccion-header");
+  headerComponent(header);
+
   getBienvenida().then(function (bienvenida) {
     for (const b of bienvenida) {
       addBienvenida(b);
@@ -133,6 +136,10 @@ function main() {
       addServicios(s);
     }
   });
+
+  const contactForm = document.querySelector(".seccion-contacto");
+  contactComponent(contactForm);
+
   const footer = document.querySelector(".seccion-footer");
   footerComponent(footer);
 }
