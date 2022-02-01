@@ -33,12 +33,14 @@ align-items: center;
 .header__logo__img {
   height: 50px;
   width: 50px;
-  background-color: #d6814a;
+
 }
 .header__logo__img:hover {
   box-shadow: 0 0 25px #c5ce99;
 }
 .header__burger-menu {
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 690px) {
   .header__burger-menu {
@@ -46,9 +48,9 @@ align-items: center;
   }
 }
 .header__burger-menu__img {
-  height: 50px;
+  height: auto;
   width: 50px;
-  background-color: #d6814a;
+
 }
 .header__burger-menu__img:hover {
   box-shadow: 0 0 25px #c5ce99;

@@ -27,39 +27,41 @@ function contactComponent(element) {
 }
 
 function postData() {
-  const form = document.querySelector(".seccion-contacto")
+  const form = document.querySelector(".seccion-contacto");
 
-  form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const formData = new FormData(e.target);
-      const objeto = Object.fromEntries(formData.entries());
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-      let mensaje = `Nombre: ${objeto.nombre} <br>
-      <br>
-      Mail: ${objeto.email} <br> 
-      <br>
-      Mensaje: ${objeto.mensaje} `
+    const data = new FormData(event.target);
+    const value = Object.fromEntries(data.entries());
 
-      fetch("https://apx-api.vercel.app/api/utils/dwf", {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-              "name": mensaje,
-              "to": "danielaakerman14@gmail.com",
-              "message": mensaje,
-          })
-      }).then(() => {
-          alert("Gracias por escribirme")
-          document.querySelectorAll(".form__input").forEach((input) => {
-              input.value = ""
-          })
-      }).catch(() => {
-          alert("Ha ocurrido un error, intentalo nuevamente")
+    const mensaje = `
+    Enviado por: ${value.name};
+    Email: ${value.email}
+    mensaje:
+    ${value.message};
+    `;
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify({
+        to: "danielaakerman14@gmail.com",
+        message: mensaje,
+      }),
+    })
+      .then(() => {
+        alert("Gracias por escribirme!");
+        document.querySelectorAll(".form__input").forEach((input) => {
+          input.value = "";
+        });
       })
-  })
-
-
+      .catch((err) => {
+        alert("Ha ocurrido un error, intentalo nuevamente");
+      });
+  });
 }
-postData()
+postData();

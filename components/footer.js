@@ -3,7 +3,7 @@ function footerComponent(element) {
   componentEl.innerHTML = `
   <div class="seccion-footer">
     <div class="footer__logo">
-        <img class="footer__logo__img" src="./img/logo.png" alt="logo" />
+        <img class="footer__logo__img" src="./img/favicon.png" alt="logo" />
         <p class="footer__logo__derechos-reservados">© 2022 Daniela Akerman</p>
       </div>
       <div class="footer__rrss">
