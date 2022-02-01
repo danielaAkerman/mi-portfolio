@@ -9,18 +9,7 @@ body {
 }
 
 .seccion-welcome {
-  background: linear-gradient(
-    to bottom,
-    #d6814a,
-    #db9e6f,
-    #e0bb93,
-    #e5d8b7,
-    #e9f5db,
-    #e5d8b7,
-    #e0bb93,
-    #db9e6f,
-    #d6814a
-  );
+  background: linear-gradient(to bottom, #063831, #e9f5db );
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
