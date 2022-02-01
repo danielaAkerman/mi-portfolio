@@ -9,6 +9,18 @@ body {
 }
 
 .seccion-welcome {
+  background: linear-gradient(
+    to bottom,
+    #d6814a,
+    #db9e6f,
+    #e0bb93,
+    #e5d8b7,
+    #e9f5db,
+    #e5d8b7,
+    #e0bb93,
+    #db9e6f,
+    #d6814a
+  );
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
@@ -27,7 +39,7 @@ body {
 
 .seccion-presentacion {
   background-color: #063831;
-  color: #E9F5DB;
+  color: #e9f5db;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -74,7 +86,7 @@ body {
 }
 
 .seccion-servicios {
-  background-color: #E9F5DB;
+  background-color: #e9f5db;
   color: #063831;
   padding-top: 75px;
   padding-bottom: 30px;
