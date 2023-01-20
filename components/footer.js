@@ -4,7 +4,7 @@ function footerComponent(element) {
   <div class="seccion-footer">
     <div class="footer__logo">
         <img class="footer__logo__img" src="./img/favicon.png" alt="logo" />
-        <p class="footer__logo__derechos-reservados">© 2022 Daniela Akerman</p>
+        <p class="footer__logo__derechos-reservados">© 2023 Daniela Akerman</p>
       </div>
       <div class="footer__rrss">
         <a

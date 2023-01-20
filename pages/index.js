@@ -1,3 +1,5 @@
+// import { getPortfolio } from "./portfolio";
+
 // OBTENER BIENVENIDA DESDE CMS
 function getBienvenida() {
   return fetch(
@@ -130,6 +132,14 @@ function main() {
       addPresentacion(p);
     }
   });
+
+
+  // getPortfolio().then(function (portfolio) {
+  //   for (const p of portfolio) {
+  //     addPortfolio(p);
+  //   }
+  // });
+
 
   getServicios().then(function (servicios) {
     for (const s of servicios) {
